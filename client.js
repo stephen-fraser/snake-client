@@ -6,12 +6,14 @@ const connect = function () {
     port: 50541, // PORT number here,
     host: "165.227.47.243" // IP address here,
   });
+  
 
   // Event Handler for connect
   conn.on("connect", (data) => { 
     console.log("Successful connection to snek");
-    conn.write("Name: Dad")
+    conn.write("Name: Dad");
   });
+
 
   // Event Handler for getting booted
   conn.on("data", (data) => {
