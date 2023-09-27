@@ -10,13 +10,14 @@ const connect = function () {
   // Event Handler for connect
   conn.on("connect", (data) => { 
     console.log("Successful connection to snek");
-    conn.write("snekky snek")
+    conn.write("Name: Dad")
   });
 
   // Event Handler for getting booted
   conn.on("data", (data) => {
     console.log("you ded cuz you idled");
   });
+
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
