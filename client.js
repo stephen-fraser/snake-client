@@ -6,7 +6,7 @@ const connect = function () {
     port: 50541, // PORT number here,
     host: "165.227.47.243" // IP address here,
   });
-  
+
 
   // Event Handler for connect
   conn.on("connect", (data) => { 
@@ -28,4 +28,4 @@ const connect = function () {
 };
 
 
-module.exports = connect;
+module.exports = { connect };
